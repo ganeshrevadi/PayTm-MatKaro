@@ -5,7 +5,9 @@ const authMiddleware = async (req, res, next) => {
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    return res.status(403).json({});
+    return res.status(403).json({
+      message: "You Don't Have the neccessary Permessions"
+    });
   }
 
   const token = authHeader.split(" ")[1];
