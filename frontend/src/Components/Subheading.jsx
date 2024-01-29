@@ -1,10 +1,14 @@
 function Header({
-  label
+  label,
+  placeholder
 }) {
   return (
-    <div className="text-slate-500 text-md  pt-1 px-4 pb-4">
-      {label}
-    </div>
+    <div>
+      <div className="text-sm font-medium text-left py-2">
+        {label}
+      </div>
+      <input placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200" />
+    </div >
   )
 }
 
