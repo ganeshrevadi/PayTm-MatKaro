@@ -1,4 +1,4 @@
-function Header({
+function Subheading({
   label,
   placeholder
 }) {
@@ -12,4 +12,4 @@ function Header({
   )
 }
 
-export default Header;
+export default Subheading;

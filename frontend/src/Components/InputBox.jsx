@@ -1,4 +1,4 @@
-function Header({
+function InputBox({
   label
 }) {
   return (
@@ -8,4 +8,4 @@ function Header({
   )
 }
 
-export default Header;
+export default InputBox;
