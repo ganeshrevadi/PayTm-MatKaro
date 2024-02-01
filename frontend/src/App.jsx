@@ -1,12 +1,12 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from './Components/Header'
+import Signup from './Pages/Signup'
 
 function App() {
 
   return (
-    <Header label={"Hey Boi"} />
-
+    <Signup />
     // <BrowserRouter>
     //   <Routes>
     //     <Route path='/signup' element={<Signup />} />
