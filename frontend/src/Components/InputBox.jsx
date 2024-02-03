@@ -1,4 +1,4 @@
-function InputBox({
+export function InputBox({
   label,
   placeholder
 }) {
@@ -12,4 +12,3 @@ function InputBox({
   )
 }
 
-export default InputBox;

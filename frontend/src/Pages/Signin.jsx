@@ -1,12 +1,11 @@
-import { Header, Button, InputBox, Subheading, Warning } from "../Components";
+import { Header } from "../Components/Header";
 
 
-function Signin() {
+export function Signin() {
   return (
     <div>
-      <Header label="Signup" />
+      <Header label="Signin" />
     </div>
   )
 }
 
-export default Signin;

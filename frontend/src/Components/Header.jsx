@@ -1,4 +1,4 @@
-function Header({
+export function Header({
   label
 }) {
   return (
@@ -8,4 +8,3 @@ function Header({
   )
 }
 
-export default Header;
