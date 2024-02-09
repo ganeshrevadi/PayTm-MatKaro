@@ -1,13 +1,27 @@
 import { Balance } from "../Components/Balance";
 import { Appbar } from "../Components/Appbar";
 import { Users } from "../Components/Users";
-import { SendMoney } from "../Components/SendMoney";
+import { useEffect, useState } from "react";
+import axios from "axios"
 
 function Dashboard() {
+  const [balance, setBalance] = useState(0)
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/v1/account/balance", {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`
+      }
+    })
+      .then(res => {
+        setBalance(res.data.balance)
+      })
+  })
+
   return (
     <div className="flex justify-self-center flex-col p-6">
       <Appbar />
-      <Balance value={"10,000"} />
+      <Balance value={balance} />
       <Users />
     </div>
   )
