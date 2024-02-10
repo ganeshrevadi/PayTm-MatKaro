@@ -34,7 +34,7 @@ export const Signup = () => {
         <div className="pt-4">
           <Button label={"Sign up"} onPress={
             async () => {
-              const res = await axios.post("http://localhost:3000/api/v1/user/signup", {
+              const res = await axios.post("https://paytm-server.onrender.com/api/v1/user/signup", {
                 username,
                 password,
                 firstName,
